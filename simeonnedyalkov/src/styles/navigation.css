@@ -1,0 +1,10 @@
+.navigationContainer {
+  width: 100%;
+  max-width: 100vw;
+  max-height: 10rem;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  z-index: 100;
+}

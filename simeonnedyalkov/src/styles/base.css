@@ -1,9 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #030014;
+  background: rgb(28, 28, 34);
+  scroll-behavior: smooth !important;
+  font-family: "Space Grotesk", sans-serif;
+  background-size: cover;
+  min-height: 600px;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
   color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line {
+  color: white !important;
+}
+.dynamicBackground {
+  padding: 1.3rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.dynamicBackground1 {
+  padding: 1.3rem;
+  opacity: 0;
+  transform: translateX(-100%) scale(0.8);
+  animation: zoomIn 2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20%) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 480px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
 }

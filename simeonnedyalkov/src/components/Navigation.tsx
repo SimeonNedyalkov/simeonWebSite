@@ -1,8 +1,8 @@
 export default function Navigation() {
   return (
     <nav className="navigationContainer">
-      <div className="">Simeon.</div>
-      <div className="">
+      <div className="navigationLogo">Simeon.</div>
+      <div className="navigationItems">
         <a href="#home" className="hover:underline">
           Home
         </a>

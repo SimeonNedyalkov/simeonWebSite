@@ -13,6 +13,9 @@
 .navigationLogo {
   font-size: 2.3rem;
 }
+.navigationLogo2 {
+  color: #fee715;
+}
 
 .navigationItems {
   font-size: 1.2rem;
@@ -21,4 +24,15 @@
   justify-content: end;
   align-items: end;
   gap: 1rem;
+}
+.navigationItems a {
+  text-decoration: none;
+}
+.navigationItems a:active {
+  text-decoration: dashed;
+}
+.navigationHire {
+  background-color: #fee715;
+  color: #101820;
+  font-size: 1.2rem;
 }

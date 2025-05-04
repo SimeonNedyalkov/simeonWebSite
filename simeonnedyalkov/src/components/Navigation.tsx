@@ -1,7 +1,11 @@
+import { buttonVariants } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav className="navigationContainer">
-      <div className="navigationLogo">Simeon.</div>
+      <div className="navigationLogo">
+        Simeon <span className="navigationLogo2">.</span>
+      </div>
       <div className="navigationItems">
         <a href="#home" className="hover:underline">
           Home
@@ -15,9 +19,12 @@ export default function Navigation() {
         <a href="#contacts" className="hover:underline">
           Contacts
         </a>
-        <a href="#hire" className="">
+        <Link
+          to="#hire"
+          className="bg-[#fee715] text-[#101820] font-semibold rounded-full px-6 py-2 h-[44px] flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200 hover:brightness-95"
+        >
           Hire Me
-        </a>
+        </Link>
       </div>
     </nav>
   );

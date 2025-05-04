@@ -10,7 +10,8 @@
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 4rem;
+  padding: 3rem 5rem;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .navigationLogo {

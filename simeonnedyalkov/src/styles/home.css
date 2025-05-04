@@ -3,4 +3,89 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100vh;
+}
+
+.homeImg {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  transform: translateX(-5rem);
+  object-position: center 10%;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hImg {
+  position: absolute;
+  top: 0;
+  bottom: 13rem;
+  right: 0;
+  left: 40rem;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#canvas-container {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 60rem;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: absolute;
+  left: 0;
+  padding-left: 5rem;
+}
+.textName {
+  color: #fee715;
+}
+.contactButtons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10rem;
+  left: 5rem;
+  gap: 2rem;
+}
+.githubIcon svg path {
+  transition: fill 0.3s ease;
+}
+
+.githubIcon:hover svg path {
+  fill: #fee715;
+}
+.linkedInIcon:hover svg path {
+  fill: #fee715;
+}
+.facebookIcon:hover svg path {
+  fill: #fee715;
+}
+.cvButton {
+  color: #fee715;
+}
+.cvButton:hover {
+  background-color: #fee715;
+  color: #101820;
 }

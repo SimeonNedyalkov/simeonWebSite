@@ -88,4 +88,10 @@
 .cvButton:hover {
   background-color: #fee715;
   color: #101820;
+  fill: #101820;
+  stroke: #101820;
+}
+.cvButton:hover svg {
+  fill: #101820;
+  stroke: #101820;
 }

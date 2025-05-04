@@ -4,4 +4,50 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
+  width: 100%;
+}
+.projectName {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.projectsText,
+.laptopCanvas {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 3rem;
+}
+.demoLink:hover svg path {
+  fill: #fee715;
+  stroke: #fee715;
+}
+.githubIcon:hover svg path {
+  fill: #fee715;
+}
+.projectDesc {
+  position: relative;
+  padding-bottom: 1rem;
+  color: #857a92;
+}
+.projectTehnologies {
+  position: relative; /* Required for ::after to anchor properly */
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.projectTehnologies::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 40vw;
+  height: 2px;
+  background-color: #fee715;
 }

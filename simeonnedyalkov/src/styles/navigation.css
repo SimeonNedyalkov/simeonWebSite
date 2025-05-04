@@ -1,38 +1,53 @@
 .navigationContainer {
   max-height: 10rem;
-  height: 10%;
   display: flex;
   flex-direction: row;
   color: white;
   z-index: 100;
-  margin: 2rem;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
+  padding: 3rem 4rem;
 }
 
 .navigationLogo {
   font-size: 2.3rem;
+  font-weight: 600;
 }
 .navigationLogo2 {
   color: #fee715;
 }
 
 .navigationItems {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: end;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 500;
 }
 .navigationItems a {
   text-decoration: none;
 }
-.navigationItems a:active {
-  text-decoration: dashed;
-}
+
 .navigationHire {
   background-color: #fee715;
   color: #101820;
   font-size: 1.2rem;
+}
+.navLink {
+  text-decoration: none;
+  color: white;
+}
+
+.navLink:hover {
+  color: #fee715;
+}
+
+.navLink.active {
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  color: #fee715;
+  font-weight: bold;
 }

@@ -11,7 +11,7 @@ body {
   margin: 0;
   background: #101820;
   scroll-behavior: smooth !important;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   background-size: cover;
   min-height: 600px;
 }

@@ -1,0 +1,98 @@
+.educationContainer {
+  margin: 2rem;
+  max-width: 800px;
+  position: absolute;
+  bottom: 0;
+}
+
+.educationTitle h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.educationContainer h2 {
+  text-align: left;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.educationContainer h3 {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: gray;
+}
+
+.educationContainer p {
+  font-size: 0.95rem;
+  color: rgb(229, 231, 235);
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.vfuLogo {
+  margin-right: 0.5rem;
+}
+
+/* Animations (kept as-is) */
+.fadeInScreen {
+  animation: fadeIn 2s ease-in;
+}
+
+.slideInTop {
+  animation: slideInTop 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  #education {
+    margin-top: 3rem;
+  }
+
+  .educationContainer {
+    margin: 1rem;
+  }
+
+  .educationTitle h1 {
+    font-size: 1.5rem;
+  }
+
+  .educationContainer h2 {
+    font-size: 1rem;
+  }
+
+  .educationContainer h3 {
+    font-size: 0.9rem;
+  }
+
+  .educationContainer p {
+    font-size: 0.85rem;
+  }
+
+  .vfuLogo {
+    width: 2rem;
+    height: 2rem;
+  }
+}

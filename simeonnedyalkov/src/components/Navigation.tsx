@@ -22,7 +22,7 @@ export default function Navigation() {
         >
           Projects
         </NavLink>
-        <a href="#resume" className="hover:underline">
+        <a href="/resume" className="hover:underline">
           Resume
         </a>
         <a href="#contacts" className="hover:underline">

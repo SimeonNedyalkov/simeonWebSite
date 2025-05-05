@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
 import NoDemo from "./components/No";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/no" element={<NoDemo />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </>
   );

@@ -1,0 +1,78 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-left: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10rem;
+  top: 0;
+  bottom: 0;
+}
+.menu-item {
+  margin: 0.5rem;
+}
+.resumeButtons {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  color: #fee715;
+}
+
+.resumeButtons:hover {
+  background-color: #fee715;
+  color: #101820;
+  fill: #101820;
+  stroke: #101820;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+.resumeContainer {
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 0;
+  }
+
+  .menu-item {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .menu-text {
+    font-size: 0.9rem;
+  }
+
+  .menu-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-text {
+    font-size: 0.85rem;
+  }
+
+  .menu-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

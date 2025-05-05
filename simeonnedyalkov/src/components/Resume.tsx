@@ -10,6 +10,7 @@ import Skills from "./Skills";
 import Code from "./Code";
 import Bio from "./Bio";
 import Education from "./Education";
+import Certificates from "./Certificates";
 
 export default function Resume() {
   const [selectedSection, setSelectedSection] = useState("About Me");
@@ -54,9 +55,7 @@ export default function Resume() {
         {selectedSection === "Education" && <Education />}
         {selectedSection === "Skills" && <Skills />}
 
-        {selectedSection === "Certificates" && (
-          <div>About Me content goes here.</div>
-        )}
+        {selectedSection === "Certificates" && <Certificates />}
       </div>
     </div>
   );

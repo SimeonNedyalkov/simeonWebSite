@@ -8,6 +8,12 @@ import img7 from "../assets/projects/Screenshot 2024-10-22 101706.png";
 import img8 from "../assets/projects/Screenshot 2025-05-03 102951.png";
 import { Lenion } from "@/components/ThreedComponents/Lenion";
 import { CatDate } from "@/components/ThreedComponents/CatDate";
+import { ChooseYourFighter } from "@/components/ThreedComponents/ChooseYourFighter";
+import { TehnoTransport } from "@/components/ThreedComponents/TehnoTransport";
+import { MagmaHeaven } from "@/components/ThreedComponents/MagmaHeaven";
+import { EarthTresureVault } from "@/components/ThreedComponents/EarthTresureVault";
+import { MovieMagic } from "@/components/ThreedComponents/MovieMagic";
+import { RestaurantFinder } from "@/components/ThreedComponents/RestaurantFinder";
 export const HERO = {
   title: "Software Engineering Student",
   greet: "Hello, I'm",
@@ -21,8 +27,9 @@ export const arrayOfProjects = [
     desc: '" Lenion " is React-based application, written in Typescript and SCSS with a futuristic design, utilising three.js / react/three-fiber to build a futuristic 3d clothes shop. With the help of redux to manage the store and state.',
     url: img1,
     alt: "Image1",
-    demoUrl: "no",
+    demoUrl: "https://lenion.vercel.app/",
     projectCode: "https://github.com/SimeonNedyalkov/clothing-store",
+    technologies: ["React", "Redux", "React Three Fiber", "NestJS"],
   },
   {
     id: 1,
@@ -32,7 +39,7 @@ export const arrayOfProjects = [
     alt: "Image1",
     demoUrl: "https://cat-date-client.vercel.app/",
     projectCode: "https://github.com/SimeonNedyalkov/Cat-Date-Angular",
-    technologies: ["Angular"],
+    technologies: ["Angular", "NodeJS"],
   },
   {
     id: 2,
@@ -42,6 +49,7 @@ export const arrayOfProjects = [
     alt: "Image2",
     demoUrl: "https://choose-your-fighter-client.vercel.app/",
     projectCode: "https://github.com/SimeonNedyalkov/Choose-Your-Figher-React",
+    technologies: ["React", "NodeJS"],
   },
   {
     id: 3,
@@ -51,6 +59,7 @@ export const arrayOfProjects = [
     alt: "Image8",
     demoUrl: "https://tehno-transport.vercel.app/",
     projectCode: "https://github.com/SimeonNedyalkov/tehnoTransportFrontend",
+    technologies: ["React", "NestJS", "Firebase"],
   },
   {
     id: 4,
@@ -60,6 +69,7 @@ export const arrayOfProjects = [
     alt: "Image3",
     demoUrl: "no",
     projectCode: "https://github.com/SimeonNedyalkov/02.MagmaHeaven",
+    technologies: ["NodeJS", "Express", "JsonWebToken", "Mongoose"],
   },
   {
     id: 5,
@@ -69,6 +79,7 @@ export const arrayOfProjects = [
     alt: "Image4",
     demoUrl: "no",
     projectCode: "https://github.com/SimeonNedyalkov/01.EarthTreasureVault",
+    technologies: ["NodeJS", "Express", "JsonWebToken", "Mongoose"],
   },
   {
     id: 6,
@@ -78,6 +89,7 @@ export const arrayOfProjects = [
     alt: "Image5",
     demoUrl: "no",
     projectCode: "https://github.com/SimeonNedyalkov/movie-magic",
+    technologies: ["NodeJS", "Express", "JsonWebToken", "Mongoose"],
   },
   {
     id: 7,
@@ -87,6 +99,7 @@ export const arrayOfProjects = [
     alt: "Image6",
     demoUrl: "no",
     projectCode: "https://github.com/SimeonNedyalkov/restaurant-finder-react",
+    technologies: ["React", "GoogleAPI"],
   },
 ];
 
@@ -98,5 +111,29 @@ export const arrayOfThreeDs = [
   {
     id: 2,
     component: <CatDate />,
+  },
+  {
+    id: 3,
+    component: <ChooseYourFighter />,
+  },
+  {
+    id: 4,
+    component: <TehnoTransport />,
+  },
+  {
+    id: 5,
+    component: <MagmaHeaven />,
+  },
+  {
+    id: 6,
+    component: <EarthTresureVault />,
+  },
+  {
+    id: 7,
+    component: <MovieMagic />,
+  },
+  {
+    id: 8,
+    component: <RestaurantFinder />,
   },
 ];

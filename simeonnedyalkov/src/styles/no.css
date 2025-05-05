@@ -1,0 +1,59 @@
+.no-demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #81888f;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.no-demo-image {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.no-demo-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #dc3545;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.no-demo-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.no-demo-suggestion {
+  font-size: 1.2rem;
+  color: #a9a9a9;
+  margin-bottom: 20px;
+}
+
+.no-demo-button {
+  color: #fee715;
+  z-index: 1000;
+}
+
+.no-demo-button:hover {
+  background-color: #fee715;
+  color: #101820;
+  fill: #101820;
+  stroke: #101820;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

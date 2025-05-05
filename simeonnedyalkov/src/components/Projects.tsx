@@ -51,7 +51,7 @@ export default function Projects() {
                       {project.desc}
                     </div>
                     <div className="projectTehnologies font-normal">
-                      {project.technologies}
+                      {project.technologies.join(", ")}
                     </div>
                     <div className="projectLinks flex gap-7">
                       <Link
@@ -117,7 +117,6 @@ export default function Projects() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
-            <div>{current}</div>
           </div>
           <div className="laptopCanvas">
             <LaptopCanvas projectId={current} />

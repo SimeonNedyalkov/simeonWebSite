@@ -36,10 +36,11 @@
   color: #857a92;
 }
 .projectTehnologies {
-  position: relative; /* Required for ::after to anchor properly */
+  position: relative;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   padding-bottom: 0.5rem;
+  color: #fd80db;
 }
 
 .projectTehnologies::after {

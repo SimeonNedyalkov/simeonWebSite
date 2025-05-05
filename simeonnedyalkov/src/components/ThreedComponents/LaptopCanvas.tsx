@@ -1,8 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import { CatDate } from "../ThreedComponents/CatDate";
 import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
-import { Lenion } from "./Lenion";
 import { arrayOfThreeDs } from "@/constants/constants";
 type LaptopCanvasProps = {
   projectId: number;

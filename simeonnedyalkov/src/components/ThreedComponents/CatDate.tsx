@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 // import computerScene from "/3d/scene.gltf";
 
 export function CatDate({ props }: any) {
-  const { nodes, materials } = useGLTF("/3d/scene.gltf") as any;
+  const { nodes, materials } = useGLTF("/3d/catdate/scene.gltf") as any;
   return (
     <group {...props} dispose={null}>
       <group position={[0.121, 0.007, 0]}>

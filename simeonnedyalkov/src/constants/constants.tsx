@@ -6,6 +6,8 @@ import img5 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img6 from "../assets/projects/Screenshot 2024-09-05 212941.png";
 import img7 from "../assets/projects/Screenshot 2024-10-22 101706.png";
 import img8 from "../assets/projects/Screenshot 2025-05-03 102951.png";
+import { Lenion } from "@/components/ThreedComponents/Lenion";
+import { CatDate } from "@/components/ThreedComponents/CatDate";
 export const HERO = {
   title: "Software Engineering Student",
   greet: "Hello, I'm",
@@ -85,5 +87,16 @@ export const arrayOfProjects = [
     alt: "Image6",
     demoUrl: "no",
     projectCode: "https://github.com/SimeonNedyalkov/restaurant-finder-react",
+  },
+];
+
+export const arrayOfThreeDs = [
+  {
+    id: 1,
+    component: <Lenion />,
+  },
+  {
+    id: 2,
+    component: <CatDate />,
   },
 ];

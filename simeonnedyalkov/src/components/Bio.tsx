@@ -1,191 +1,46 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
 
-const Code = () => {
-  const [activeTab, setActiveTab] = useState("Code.tsx");
-
+export default function Bio() {
   return (
-    <div className="codeEditorContainer bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
-      {/* Tabs */}
-      <div className="bg-gray-800 flex items-center text-gray-300">
-        <div
-          className={`px-4 py-2 cursor-pointer ${
-            activeTab === "Code.tsx" ? "bg-gray-700" : ""
-          }`}
-          onClick={() => setActiveTab("Code.tsx")}
-        >
-          Code.tsx
-        </div>
-        <div
-          className={`px-4 py-2 cursor-pointer ${
-            activeTab === "code.css" ? "bg-gray-700" : ""
-          }`}
-          onClick={() => setActiveTab("code.css")}
-        >
-          code.css
-        </div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="flex flex-col items-start justify-center px-4 py-16 text-left"
+    >
+      <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">Bio</h1>
+      <p className="text-lg sm:text-lg lg:text-xl leading-relaxed tracking-wide">
+        I'm{" "}
+        <span className="font-semibold" style={{ color: "#fee715" }}>
+          Simeon Nedyalkov
+        </span>
+        , a JavaScript Web Development graduate from Software University, class
+        of 2024.
+        <br />
+        Currently pursuing Software Engineering and Management at Varna Free
+        University.
+        <br />
+        I'm passionate about building{" "}
+        <span className="font-semibold text-emerald-300">
+          modern, responsive
+        </span>{" "}
+        web applications with clean and efficient code.
+      </p>
+
+      <div className="mt-8 text-lg sm:text-lg lg:text-xl tracking-wide space-y-2">
+        <p>
+          <span className="font-semibold">Languages:</span> English, Bulgarian
+        </p>
+        <p>
+          <span className="font-semibold">Email:</span>{" "}
+          <a
+            href="mailto:simeon.nedyalkov@gmail.com"
+            className="text-blue-400 underline"
+          >
+            simeon.nedyalkov@gmail.com
+          </a>
+        </p>
       </div>
-
-      {/* Tab Content */}
-      <div className="px-8 py-8 border-t-[2px] border-indigo-900 overflow-hidden">
-        {activeTab === "Code.tsx" && (
-          <code className="font-mono text-sm leading-loose vsBackground">
-            <div className="myCode">
-              <div className="blink">
-                <span className="const mr-2">const</span>
-                <span className="var mr-2">coder</span>
-                <span className="equal mr-2">=</span>
-                <span className="return">{`{ `}</span>
-                <span className="cursor"></span>
-              </div>
-
-              <div>
-                <span className="inObject ml-8 mr-2">name:</span>
-                <span className="instring">'</span>
-                <span className="instring">Simeon Nedqlkov</span>
-                <span className="instring">'</span>
-                <span className="equal">,</span>
-              </div>
-              <div>
-                <span className="inObject ml-8 mr-2">desiredRole:</span>
-                <span className="instring">'</span>
-                <span className="instring">Junior Developer</span>
-                <span className="instring">'</span>
-                <span className="equal">,</span>
-              </div>
-              <div>
-                <span className="inObject ml-8 mr-2">skills:</span>
-                <span className="var">[</span>
-                <span className="instring">'</span>
-                <span className="instring">React</span>
-                <span className="instring">', '</span>
-                <span className="instring">Angular</span>
-                <span className="instring">', '</span>
-                <span className="instring">Node</span>
-                <span className="instring">', '</span>
-                <span className="instring">TypeScript</span>
-                <span className="instring">'</span>
-                <span className="var">]</span>
-                <span className="equal">,</span>
-              </div>
-              <div>
-                <span className="inObject ml-8 mr-2">hardWorker:</span>
-                <span className="const">true</span>
-                <span className="equal">,</span>
-              </div>
-              <div>
-                <span className="inObject ml-8 mr-2">problemSolver:</span>
-                <span className="const">true</span>
-                <span className="equal">,</span>
-              </div>
-              <div>
-                <span className="hire ml-8 mr-2">hire:</span>
-                <span className="const">function</span>
-                <span className="var">()</span>
-                <span className="var">{` {`}</span>
-              </div>
-              <div>
-                <span className="return ml-16 mr-2">return</span>
-                <span className="text-yellow-400">(</span>
-              </div>
-              <div>
-                <span className="const ml-24">this.</span>
-                <span className="var mr-2">hardWorker</span>
-                <span className="equal">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="const ml-24">this.</span>
-                <span className="var mr-2">problemSolver</span>
-                <span className="equal">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="const ml-24">this.</span>
-                <span className="var mr-2">skills.length</span>
-                <span className="equal mr-2">&gt;=</span>
-                <span className="number">10</span>
-              </div>
-              <div>
-                <span className="text-yellow-400 ml-16">)</span>
-                <span className="equal mr-2">{`;`}</span>
-              </div>
-              <div>
-                <span className="var ml-8">{`}`}</span>
-              </div>
-              <div>
-                <span className="return">{`}`}</span>
-              </div>
-            </div>
-          </code>
-        )}
-
-        {activeTab === "code.css" && (
-          <code className="font-mono text-sm leading-loose vsBackground">
-            <div className="myCode">
-              <div>
-                <span className="cssVar">.cursor</span>
-                <span className="text-yellow-400">{` {`}</span>
-              </div>
-              <div className="ml-8">
-                <span className="inObject">display</span>
-                <span className="equal">:</span>
-                <span className="instring"> inline-block</span>
-                <span className="equal">;</span>
-              </div>
-              <div className="ml-8">
-                <span className="inObject">{`width`}</span>
-                <span className="equal">:</span>
-                <span className="instring"> 2px</span>
-                <span className="equal">;</span>
-              </div>
-              <div className="ml-8">
-                <span className="inObject">height</span>
-                <span className="equal">:</span>
-                <span className="instring"> 1em</span>
-                <span className="equal">;</span>
-              </div>
-
-              <div className="ml-8">
-                <span className="inObject">animation</span>
-                <span className="equal">:</span>
-                <span className="instring"> blink 1s step-start infinite</span>
-                <span className="equal">;</span>
-              </div>
-
-              <div className="text-yellow-400">{`}`}</div>
-
-              <div>
-                <span className="return">@keyframes </span>
-                <span className="inObject">blink</span>
-                <span className="text-yellow-400">{` {`}</span>
-              </div>
-              <div className="ml-8">
-                <span className="equal">0%, 100%</span>
-                <span className="return">{` {`}</span>
-              </div>
-              <div className="ml-16">
-                <span className="inObject">opacity</span>
-                <span className="equal">:</span>
-                <span className="number"> 1</span>
-                <span className="equal">;</span>
-              </div>
-              <div className="return">{`}`}</div>
-              <div className="ml-8">
-                <span className="equal">50% </span>
-                <span className="return">{`{`}</span>
-              </div>
-              <div className="ml-16">
-                <span className="inObject">opacity</span>
-                <span className="equal">:</span>
-                <span className="number"> 0</span>
-                <span className="equal">;</span>
-              </div>
-              <div className="ml-8 return">{`}`}</div>
-              <div className="text-yellow-400">{`}`}</div>
-            </div>
-          </code>
-        )}
-      </div>
-    </div>
+    </motion.div>
   );
-};
-
-export default Code;
+}

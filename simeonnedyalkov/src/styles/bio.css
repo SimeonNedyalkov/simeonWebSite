@@ -1,0 +1,34 @@
+#bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 2rem 2rem;
+}
+
+#bio p {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  #bio {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .bioContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+  .bioText {
+    font-size: 0.8rem !important;
+    width: 10rem;
+  }
+}

@@ -22,9 +22,14 @@ export default function Navigation() {
         >
           Projects
         </NavLink>
-        <a href="/resume" className="hover:underline">
+        <NavLink
+          to="/resume"
+          className={({ isActive }) =>
+            isActive ? "navLink active" : "navLink"
+          }
+        >
           Resume
-        </a>
+        </NavLink>
         <a href="#contacts" className="hover:underline">
           Contact
         </a>

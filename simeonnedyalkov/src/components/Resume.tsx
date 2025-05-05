@@ -7,10 +7,11 @@ import {
 import { Button } from "./ui/button";
 import { useState } from "react";
 import Skills from "./Skills";
-import Code from "./Bio";
+import Code from "./Code";
+import Bio from "./Bio";
 
 export default function Resume() {
-  const [selectedSection, setSelectedSection] = useState("Experience");
+  const [selectedSection, setSelectedSection] = useState("About Me");
   const menuItems = [
     { name: "About Me", icon: PersonStanding },
     { name: "Education", icon: GraduationCap },
@@ -44,7 +45,8 @@ export default function Resume() {
       </nav>
       <div className="resumeContainer">
         {selectedSection === "About Me" && (
-          <div>
+          <div className="flex">
+            <Bio />
             <Code />
           </div>
         )}

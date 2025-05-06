@@ -1,0 +1,49 @@
+.hireMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.hireMepart1,
+.hireMepart2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  text-align: start;
+}
+
+.hireMepart1 {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+}
+.emailWrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.copyHint {
+  position: absolute;
+  top: -1.5rem; /* Adjust based on your layout */
+  left: 0;
+  opacity: 0;
+  transform: translateY(-5px) rotate(8deg);
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+  color: #fee715;
+  font-weight: bold;
+  width: 7.4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.emailWrapper:hover .copyHint {
+  opacity: 1;
+}

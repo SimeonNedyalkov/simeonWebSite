@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import NoDemo from "./components/No";
 import Resume from "./components/Resume";
 import Contacts from "./components/contacts/Contacts";
+import HireMe from "./components/HireMe";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/projects/no" element={<NoDemo />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/hireme" element={<HireMe />} />
       </Routes>
     </>
   );

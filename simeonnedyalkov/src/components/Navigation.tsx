@@ -30,9 +30,14 @@ export default function Navigation() {
         >
           Resume
         </NavLink>
-        <a href="#contacts" className="hover:underline">
+        <NavLink
+          to="/contacts"
+          className={({ isActive }) =>
+            isActive ? "navLink active" : "navLink"
+          }
+        >
           Contact
-        </a>
+        </NavLink>
         <NavLink
           to="#hire"
           className="bg-[#fee715] text-[#101820] font-semibold rounded-full px-6 py-2 h-[44px] flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200 hover:brightness-95"

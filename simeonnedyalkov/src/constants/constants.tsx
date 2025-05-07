@@ -257,3 +257,5 @@ export const skills = [
     ],
   },
 ];
+
+export const github = { repos: 39, commits: 1880 };

@@ -56,5 +56,27 @@
 }
 
 .contactsSVG {
-  width: 50%;
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .contactsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: visible;
+    flex-direction: column;
+  }
+  .contactsForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    padding-top: 40rem;
+  }
+  .contactsSVG {
+    width: 100%;
+  }
 }

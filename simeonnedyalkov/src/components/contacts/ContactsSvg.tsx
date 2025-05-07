@@ -2,12 +2,7 @@ import { motion } from "motion/react";
 export default function ContactsSvg() {
   return (
     <div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="600"
-        height="600"
-        viewBox="0 0 4000 4000"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 4000">
         <defs>
           <clipPath id="clip-0">
             <path

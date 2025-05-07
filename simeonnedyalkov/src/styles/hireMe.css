@@ -4,6 +4,9 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
+  max-height: 100vh;
+  overflow: hidden; /* hides extra content */
+  position: relative; /* make it a positioning context */
 }
 .hireMepart1,
 .hireMepart2 {
@@ -12,16 +15,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   text-align: start;
 }
 
 .hireMepart1 {
+  height: 25rem;
   width: 25rem;
   display: flex;
   flex-direction: column;
   text-align: start;
   align-items: start;
+  margin-left: 4rem;
+  margin-right: 10rem;
+}
+.hireMepart2 {
+  width: 25rem;
+  height: 25rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
 }
 .emailWrapper {
   position: relative;
@@ -31,7 +47,7 @@
 
 .copyHint {
   position: absolute;
-  top: -1.5rem; /* Adjust based on your layout */
+  top: -1.5rem;
   left: 0;
   opacity: 0;
   transform: translateY(-5px) rotate(8deg);
@@ -46,4 +62,11 @@
 
 .emailWrapper:hover .copyHint {
   opacity: 1;
+}
+.fingerCanvas {
+  position: absolute;
+  bottom: -10rem;
+  left: 32rem;
+  width: 30rem;
+  height: 30rem;
 }

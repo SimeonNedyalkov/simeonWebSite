@@ -1,0 +1,11 @@
+Model Information:
+* title:	Finger
+* source:	https://sketchfab.com/3d-models/finger-8e2efa3411cb4a25a95f390ec819739e
+* author:	blocksmc.com (https://sketchfab.com/blocksmc.com)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Finger" (https://sketchfab.com/3d-models/finger-8e2efa3411cb4a25a95f390ec819739e) by blocksmc.com (https://sketchfab.com/blocksmc.com) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

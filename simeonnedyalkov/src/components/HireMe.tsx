@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import FingerCanvas from "./ThreedComponents/FingerCanvas";
+import { motion } from "framer-motion";
 export default function HireMe() {
+  const [copy, setCopy] = useState("Copy");
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className="hireMeContainer">
       <div className="hireMepart1">
@@ -9,11 +13,18 @@ export default function HireMe() {
         </h1>
         <p className="text-2xl font-bold text-left">New business </p>
         <div className="emailWrapper">
-          <span className="emailText text-xl mt-2 underline">
+          <button
+            className="emailText text-lg mt-2 underline cursor-pointer"
+            onClick={() => {
+              navigator.clipboard.writeText("simeon.nedyalkovv@gmail.com");
+              setCopy("Copied");
+              setTimeout(() => setCopy("Copy"), 2000);
+            }}
+          >
             simeon.nedyalkovv@gmail.com
-          </span>
+          </button>
           <div className="copyHint">
-            <span>Copy</span>
+            <span>{copy}</span>
           </div>
         </div>
         <div className="flex gap-5">
@@ -87,8 +98,18 @@ export default function HireMe() {
         </div>
       </div>
       <div className="hireMepart2">
-        <p>Contact me here:</p>
-        <NavLink to="/contacts">Contacts</NavLink>
+        <p className="font-bold">Contact me here:</p>
+        <NavLink to="/contacts" style={{ color: "#fee715" }}>
+          Contacts
+        </NavLink>
+        <motion.div
+          className="fingerCanvas"
+          initial={{ y: 300, opacity: 0 }}
+          animate={loaded ? { y: 0, opacity: 1 } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <FingerCanvas onLoaded={() => setLoaded(true)} />
+        </motion.div>
       </div>
     </div>
   );

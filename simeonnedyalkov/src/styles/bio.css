@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    margin-left: 0;
   }
   .bioText {
     font-size: 0.8rem !important;

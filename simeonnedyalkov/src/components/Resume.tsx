@@ -31,7 +31,7 @@ export default function Resume() {
         height: "100vh",
       }}
     >
-      <nav className="resumeNav">
+      <nav className="resumeNav grid-layout">
         {menuItems.map((item) => (
           <div
             key={item.name}

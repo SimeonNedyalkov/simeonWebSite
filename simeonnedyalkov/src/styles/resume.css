@@ -79,12 +79,26 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    left: 0;
+  }
+  .resumeButtons {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 0.5rem;
+    color: #fee715;
   }
   .resumeNav {
-    display: flex;
-    flex-direction: row;
-    margin: 3rem;
-    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5rem;
+    margin-top: 7rem;
   }
   .resumeContainer {
     width: 20vw;

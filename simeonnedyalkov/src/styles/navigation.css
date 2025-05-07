@@ -55,3 +55,23 @@
   color: #fee715;
   font-weight: bold;
 }
+/* hamburger */
+.hamburger {
+  display: none;
+}
+@media (max-width: 480px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navigationItems {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navigationLogo {
+    font-size: 1.3rem;
+  }
+}

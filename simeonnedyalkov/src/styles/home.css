@@ -5,6 +5,13 @@
   text-align: center;
   height: 100vh;
 }
+.homeAllTextAndButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .homeImg {
   width: 40rem;
@@ -96,4 +103,151 @@
 .cvButton:hover svg {
   fill: #101820;
   stroke: #101820;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .homeText {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .heroTitle {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+  }
+  .homeImg {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .homeText .text-3xl {
+    font-size: 1.5rem;
+  }
+
+  .homeText {
+    padding: 0.5rem;
+  }
+
+  .contactButtons {
+    position: absolute;
+    top: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bg,
+  .hImg {
+    position: absolute;
+    top: 33rem;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  .homeAllTextAndButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #canvas-container {
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .hImg img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .homeText {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .heroTitle {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+  }
+  .homeImg {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .homeText .text-3xl {
+    font-size: 1.5rem;
+  }
+
+  .homeText {
+    padding: 0.5rem;
+  }
+
+  .contactButtons {
+    position: absolute;
+    top: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bg,
+  .hImg {
+    position: absolute;
+    top: 33rem;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  .homeAllTextAndButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #canvas-container {
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .hImg img {
+    height: 400px;
+    width: 400px;
+  }
 }

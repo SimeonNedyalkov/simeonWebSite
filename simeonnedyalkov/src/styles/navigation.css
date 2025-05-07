@@ -75,3 +75,19 @@
     font-size: 1.3rem;
   }
 }
+@media (max-width: 1080px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navigationItems {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navigationLogo {
+    font-size: 1.3rem;
+  }
+}

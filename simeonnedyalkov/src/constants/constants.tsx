@@ -259,3 +259,10 @@ export const skills = [
 ];
 
 export const github = { repos: 39, commits: 1880 };
+export const NAVIGATION_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Projects", href: "/projects" },
+  { label: "Resume", href: "/resume" },
+  { label: "Contacts", href: "/contacts" },
+  { label: "Hire Me", href: "/hireme" },
+];

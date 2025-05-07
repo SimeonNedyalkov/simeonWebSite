@@ -31,7 +31,7 @@ export default function Resume() {
         height: "100vh",
       }}
     >
-      <nav>
+      <nav className="resumeNav">
         {menuItems.map((item) => (
           <div
             key={item.name}
@@ -47,13 +47,13 @@ export default function Resume() {
       </nav>
       <div className="resumeContainer">
         {selectedSection === "About Me" && (
-          <div className="flex">
+          <div className="flex aboutme">
             <Bio />
             <Code />
           </div>
         )}
         {selectedSection === "Education" && <Education />}
-        {selectedSection === "Skills" && <Skills />}
+        <div id="skills">{selectedSection === "Skills" && <Skills />}</div>
 
         {selectedSection === "Certificates" && <Certificates />}
       </div>

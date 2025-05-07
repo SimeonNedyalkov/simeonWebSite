@@ -68,6 +68,11 @@
     gap: 0.75rem;
     padding: 0.25rem;
     font-size: 0.75rem;
+    position: absolute;
+    top: 52rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .skillsForMobile {

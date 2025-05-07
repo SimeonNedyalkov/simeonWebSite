@@ -73,6 +73,11 @@
 
   .educationContainer {
     margin: 1rem;
+    position: absolute;
+    top: 12rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .educationTitle h1 {

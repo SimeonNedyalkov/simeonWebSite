@@ -18,7 +18,7 @@ export default function Certificates() {
     exit: { opacity: 0, scale: 0.95 },
   };
   return (
-    <div className="absolute bottom-0 py-4 px-2 sm:px-3 lg:px-4 overflow-hidden">
+    <div className="certificatesContainer absolute bottom-0 py-4 px-2 sm:px-3 lg:px-4 overflow-hidden">
       <h1 className="text-2xl font-medium text-center mb-4 pb-2">
         📜 Certificates
       </h1>

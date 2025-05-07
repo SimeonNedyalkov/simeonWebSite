@@ -67,6 +67,42 @@
 }
 
 @media screen and (max-width: 480px) {
+  .app-container {
+    display: flex;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .resumeNav {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 3rem;
+  }
+  .resumeContainer {
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
   .menu-text {
     font-size: 0.85rem;
   }

@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import ContactsSvg from "./ContactsSvg";
 import { motion, useInView } from "motion/react";
 
-// Variants for the parent container (form animation)
 const listVariants = {
   initial: {
     x: 100,
@@ -14,12 +13,11 @@ const listVariants = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      staggerChildren: 0.2, // Stagger the children one by one
+      staggerChildren: 0.2,
     },
   },
 };
 
-// Variants for individual form items (child animation)
 const itemVariants = {
   initial: {
     opacity: 0,
@@ -38,7 +36,7 @@ export default function Contacts() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const form = useRef<HTMLFormElement>(null);
-  const ref = useRef<HTMLDivElement>(null); // Ref for the container div
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { margin: "-200px" });
 
   const sendEmail = (e: any) => {
@@ -61,6 +59,7 @@ export default function Contacts() {
           (error) => {
             setError(true);
             setSuccess(false);
+            console.log(error);
           }
         );
     }
@@ -71,7 +70,7 @@ export default function Contacts() {
       <motion.div
         className="contactsForm"
         ref={ref}
-        variants={listVariants} // Apply variants to parent container
+        variants={listVariants}
         initial="initial"
         animate={isInView ? "animate" : "initial"}
       >

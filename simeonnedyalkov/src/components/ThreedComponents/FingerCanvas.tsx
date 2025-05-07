@@ -7,7 +7,16 @@ export default function FingerCanvas({ onLoaded }: { onLoaded?: () => void }) {
   return (
     <Canvas>
       <Suspense fallback="...loading">
-        <Stage environment="night" intensity={0.5}>
+        <ambientLight />
+        <directionalLight
+          castShadow
+          position={[0, -1, 0]}
+          intensity={0.8}
+          shadow-mapSize-width={1024}
+          shadow-mapSize-height={1024}
+          shadow-bias={-0.005}
+        />
+        <Stage environment="night" intensity={0.2}>
           <Finger onLoaded={onLoaded} />
         </Stage>
         <OrbitControls

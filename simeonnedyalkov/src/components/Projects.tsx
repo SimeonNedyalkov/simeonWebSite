@@ -14,7 +14,7 @@ import {
 export default function Projects() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
+  const [_count, setCount] = useState(0);
 
   useEffect(() => {
     if (!api) {

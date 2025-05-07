@@ -18,7 +18,7 @@ export default function Certificates() {
     exit: { opacity: 0, scale: 0.95 },
   };
   return (
-    <div className="absolute bottom-0 py-4 px-2 sm:px-3 lg:px-4">
+    <div className="absolute bottom-0 py-4 px-2 sm:px-3 lg:px-4 overflow-hidden">
       <h1 className="text-2xl font-medium text-center mb-4 pb-2">
         📜 Certificates
       </h1>
@@ -111,7 +111,8 @@ export default function Certificates() {
         <div className="flex mt-4">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-2 py-1 text-xs text-slate-300 hover:text-white font-medium transition-all duration-150 ease-in-out flex items-center gap-1 bg-white/10 hover:bg-white/20 rounded-sm border border-white/30 hover:border-white/40 backdrop-blur-sm group relative overflow-hidden"
+            className="px-2 py-1 text-xs hover:text-white font-medium transition-all duration-150 ease-in-out flex items-center gap-1 bg-white/10 hover:bg-white/20 rounded-sm border border-white/30 hover:border-white/40 backdrop-blur-sm group relative overflow-hidden"
+            style={{ color: "#fee715", borderColor: "#fee715" }}
           >
             {showAll ? "See Less" : "See More"}
             {!showAll ? (

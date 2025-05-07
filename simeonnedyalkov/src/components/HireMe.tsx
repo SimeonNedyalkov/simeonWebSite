@@ -104,9 +104,9 @@ export default function HireMe() {
         </NavLink>
         <motion.div
           className="fingerCanvas"
-          initial={{ y: 300, opacity: 0 }}
+          initial={{ y: 600, opacity: 0 }}
           animate={loaded ? { y: 0, opacity: 1 } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeInOut" }}
         >
           <FingerCanvas onLoaded={() => setLoaded(true)} />
         </motion.div>

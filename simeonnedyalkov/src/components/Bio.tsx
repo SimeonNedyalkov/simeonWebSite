@@ -6,7 +6,7 @@ export default function Bio() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="flex flex-col items-start justify-center px-4 py-16 text-left"
+      className="flex flex-col items-start justify-center px-6 py-16 ml-3 text-left"
     >
       <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">Bio</h1>
       <p className="text-lg sm:text-lg lg:text-xl leading-relaxed tracking-wide">

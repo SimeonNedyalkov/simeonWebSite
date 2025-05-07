@@ -36,7 +36,16 @@ export default function Home() {
         </div>
       </div>
       <div className="contactButtons">
-        <Button variant="outline" className="cvButton cursor-pointer">
+        <Button
+          variant="outline"
+          className="cvButton cursor-pointer"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1FR4rM8yiobFs32aBGIov4hcI2gJkd0sK/view?usp=drive_link",
+              "_blank"
+            )
+          }
+        >
           Download CV{" "}
           <svg
             viewBox="0 0 24 24"

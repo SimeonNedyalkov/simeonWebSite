@@ -29,7 +29,7 @@ export default function Navigation() {
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="flex flex-col p-8 space-y-6 text-lg font-medium">
+        <ul className="mt-10 mr-10 flex flex-col p-8 space-y-6 text-lg font-medium">
           {NAVIGATION_LINKS.map((item, index) => (
             <li key={index}>
               <Link to={item.href} className="block w-full z-102">

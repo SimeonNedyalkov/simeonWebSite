@@ -12,7 +12,7 @@ import Bio from "./Bio";
 import Education from "./Education";
 import Certificates from "./Certificates";
 
-export default function Resume() {
+function Resume() {
   const [selectedSection, setSelectedSection] = useState("About Me");
   const menuItems = [
     { name: "About Me", icon: PersonStanding },
@@ -60,3 +60,4 @@ export default function Resume() {
     </div>
   );
 }
+export default Resume;

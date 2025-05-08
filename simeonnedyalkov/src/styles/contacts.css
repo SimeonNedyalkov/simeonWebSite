@@ -56,7 +56,7 @@
 }
 
 .contactsSVG {
-  width: 40%;
+  width: 40rem;
 }
 @media (max-width: 600px) {
   .contactsContainer {
@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 0;
     overflow: visible;
     flex-direction: column;
   }
@@ -74,7 +74,7 @@
     justify-content: center;
     text-align: start;
     flex-direction: column;
-    padding-top: 40rem;
+    padding-top: 35rem;
   }
   .contactsSVG {
     width: 100%;

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import FingerCanvas from "./ThreedComponents/FingerCanvas";
 import { motion } from "framer-motion";
-export default function HireMe() {
+
+function HireMe() {
   const [copy, setCopy] = useState("Copy");
   const [loaded, setLoaded] = useState(false);
   return (
@@ -114,3 +115,4 @@ export default function HireMe() {
     </div>
   );
 }
+export default HireMe;

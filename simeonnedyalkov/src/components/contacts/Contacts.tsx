@@ -32,7 +32,7 @@ const itemVariants = {
   },
 };
 
-export default function Contacts() {
+function Contacts() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const form = useRef<HTMLFormElement>(null);
@@ -122,3 +122,4 @@ export default function Contacts() {
     </div>
   );
 }
+export default Contacts;

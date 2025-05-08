@@ -11,7 +11,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
-export default function Projects() {
+function Projects() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -124,3 +124,4 @@ export default function Projects() {
     </div>
   );
 }
+export default Projects;

@@ -104,9 +104,13 @@
   .carousel {
     margin-top: 5rem;
     max-width: 15rem;
+    position: absolute;
+    top: 30rem;
   }
   .laptopCanvas {
     width: 20rem;
     height: 20rem;
+    position: absolute;
+    top: 10rem;
   }
 }

@@ -5,7 +5,8 @@ import { Button } from "./ui/button";
 import { github } from "@/constants/constants";
 import { useEffect, useState } from "react";
 import { animate } from "framer-motion";
-export default function Home() {
+
+function Home() {
   const [reposCount, setReposCount] = useState(0);
   const [commitsCount, setCommitsCount] = useState(0);
 
@@ -52,6 +53,7 @@ export default function Home() {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="homeSVG"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
@@ -104,3 +106,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;

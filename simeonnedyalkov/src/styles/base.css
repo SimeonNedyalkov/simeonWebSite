@@ -67,6 +67,36 @@ input:-webkit-autofill::first-line {
   animation-delay: 0.2s;
 }
 
+.curve {
+  .transitionSVG,
+  .transitionBackground {
+    width: 100vw;
+    height: calc(100vh + 600px);
+    top: -300px;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    z-index: 200;
+    background-color: #101820;
+    background: #101820;
+  }
+  .transitionBackground {
+    background-color: #101820;
+    background: #101820;
+    transition: opacity 0s linear 0.1s;
+    z-index: 200;
+  }
+  .curveLinks {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 46px;
+    color: white;
+    z-index: 500;
+  }
+}
+
 @keyframes popIn {
   0% {
     opacity: 0;

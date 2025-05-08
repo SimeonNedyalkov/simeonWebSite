@@ -1,4 +1,5 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
@@ -10,7 +11,7 @@ import { AnimatePresence } from "framer-motion";
 // import Transition from "./functions/Transition";
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <>
